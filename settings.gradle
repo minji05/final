@@ -1,0 +1,2 @@
+rootProject.name = "dia"
+include ':app'

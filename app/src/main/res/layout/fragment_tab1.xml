@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".tab1Fragment"
+    android:background="@color/back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/font2"
+                android:text="여성 갱년기 증상"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:textSize="18sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/photo1"
+                android:layout_width="378dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/photo"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/font2"
+                android:text="갱년기에 좋은 영양제"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:textSize="18sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/playi"
+                    android:layout_width="96dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/pill1"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="'칼슘 및 마그네슘 복합 영양제'\n\n폐경 후 골다공증을 많이 겪기 때문에\n뼈를 튼튼하게 해주는 칼슘과 마그네슘 복합제를\n주기적으로 섭취를 해주시면 좋습니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/pill02"
+                    android:layout_width="96dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/pill2"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/box2"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="'오메가-3 영양제'\n\n오메가-3는 건조한 눈 개선/혈행 개선/\n혈중 중성지질 개선 등의 효과가 있으며,\n필수지방산을 꼭 보충해줘야 하는 40~50대\n갱년기 여성분들에게 좋은 영양제입니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/pill03"
+                    android:layout_width="96dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/pill3"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/box3"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="'비타민E 영양제'\n\n비타민E는 세포의 노화를 막아주고 세포막을\n유지시켜주는데 도움을 줍니다. 또한 항산화 물질로\n활성산소를 무력화시킵니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/pill04"
+                    android:layout_width="96dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/pill4"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/box4"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="'리그난 영양제'\n\n리그난은 당뇨병과 에스트로겐과 관련된\n암 발생률을 감소킬 수 있기 때문에, 갱년기 여성들에게\n아주 좋은 영양제입니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/font2"
+                android:text="갱년기에 좋은 음식"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:textSize="18sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/bean"
+                    android:layout_width="87dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box6"
+                    android:src="@drawable/bean"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="콩은 갱년기 호르몬제 역할을 대신할 수 있는\n유사 에스트로겐인 이소플라본이 풍부합니다.\n특히 검은 콩에 많이 함유되어 있으며 콩은\n골밀도를 높이는데도 도움을 주어 갱년기 이후\n골다공증 예방에 매우 좋습니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/pomegranate"
+                    android:layout_width="87dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box6"
+                    android:src="@drawable/pomegranate"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="석류는 여성에게 좋은 음식으로 잘 알려진 식품으로\n호르몬 감소로 인해 둔화된 신진대사를 원활하게\n만들어 주는 것은 물론 식물성 에스트로겐 성분이\n풍부하여 특히 갱년기 여성에게 좋습니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/plum"
+                    android:layout_width="87dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box6"
+                    android:src="@drawable/plum"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="자두에는 항산화 플라보노이드의 일종인\n안토시아닌이 풍부하게 들어있습니다. \n또한 자두는 폐경기 여성의 뼈 미네랄 밀도를\n향상시키고 남녀 모두에게서 체중 감소에 도움을\n준다는 연구결과도 있습니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/kudzu"
+                    android:layout_width="87dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box6"
+                    android:src="@drawable/kudzu"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="칡은 열량이 적고 지방이 거의 없으며 칡에 많이\n함유된 식물성 에스트로겐인 다이드제인은 갱년기\n여성의 뼈를 튼튼하게 해주기 때문에 특히 갱년기\n여성에게 좋습니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/milk"
+                    android:layout_width="87dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box6"
+                    android:src="@drawable/milk"></ImageView>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="우유에는 비타민D, 칼슘, 트립토판 성분이 풍부하여\n갱년기 불면증이나 우울증을 완화하는데 효과가 있으며 골다공증을 예방하고 완화해주는데 좋습니다."
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

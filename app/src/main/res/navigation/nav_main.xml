@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/diagnosisFragment">
+
+    <fragment
+        android:id="@+id/diagnosisFragment"
+        android:name="com.example.dia.diagnosis.diagnosis.DiagnosisFragment"
+        android:label="fragment_diagnosis"
+        tools:layout="@layout/fragment_diagnosis" >
+        <action
+            android:id="@+id/action_diagnosisFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/diagnosisFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.dia.diagnosis.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="totalPoint"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+</navigation>

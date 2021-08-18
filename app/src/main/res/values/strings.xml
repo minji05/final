@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SWUPreme</string>
+
+    <string name="naver_client_id">6LhR3WbLnMoBaZccOUs7</string>
+    <string name="naver_client_secret">47iyPytzaM</string>
+    <string name="naver_client_name">OWL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diagnosisFragment">갱년기 자가 진단</string>
+</resources>

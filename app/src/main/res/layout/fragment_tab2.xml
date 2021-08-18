@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".tab2Fragment"
+    android:background="@color/back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/font2"
+                android:text="갱년기에 좋은 운동법"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:textSize="18sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/playp1"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/exe1"></ImageView>
+
+                <TextView
+                    android:id="@+id/playc1"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="1. 목 스트레칭\n\n오른손을 왼쪽 머리 위에 올리고 목을 오른쪽으로\n당겨줍니다. 어깨가 따라가지 않게 주의하세요.\n가능한 범위까지만 실시하며 같은 방법으로\n반대쪽도 실시합니다. 10초씩 10회 반복합니다."
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/playp2"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/exe2"></ImageView>
+
+                <TextView
+                    android:id="@+id/playc2"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="2. 다리 뒤쪽 스트레칭\n\n양손으로 밴드를 쥐고 오른 다리를 들어올리며\n밴드를 몸 쪽으로 당겨줍니다. 가능한 범위까지만\n실시하며 같은 방법으로 반대쪽도 실시합니다.\n모든 동작은 10초씩 10회 반복합니다."
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/playi"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/exe3"></ImageView>
+
+                <TextView
+                    android:id="@+id/playc3"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="3. 골반 앞쪽 스트칭\n\n오른쪽 다리를 앞에 왼쪽 무릎을 매트에 대고\n상체는 바로 세웁니다. 골반은 정면을 유지하며\n오른쪽 무릎을 앞으로 기울여 줍니다.\n이 역시 가능한 범위까지만 하시면 되고 반대쪽도\n실시합니다. 10초씩 10회 반복합니다."
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/playp4"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/box5"
+                    android:src="@drawable/exe4"></ImageView>
+
+                <TextView
+                    android:id="@+id/playc4"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="4. 골반저근 강화운동\n\n무릎을 구부린 상태로 매트에 바로 눕습니다.\n엉덩이를 최대한 높이 천천히 들어 올립니다.\n가능한 범위까지만 실시하며 동작은 10초씩 10회\n반복합니다."
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/font2"
+                android:text="갱년기 극복 추천 영상"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:textSize="18sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="460dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/play1"
+                    android:layout_width="295dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/play1"></ImageView>
+
+                <ImageView
+                    android:id="@+id/play2"
+                    android:layout_width="295dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/play2"
+                    tools:layout_marginTop="20dp"></ImageView>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

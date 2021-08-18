@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="horizontal"
+    tools:ignore="Orientation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/cb_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:buttonTint="#44C0AA"
+        android:text="할 일1"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb_complete2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:buttonTint="#44C0AA"
+            android:text="할 일2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_complete" />
+
+    <CheckBox
+        android:id="@+id/cb_complete3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="할 일3"
+        android:buttonTint="#44C0AA"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_complete2" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        app:layout_constraintTop_toBottomOf="@id/cb_complete3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="불러오기"
+        app:layout_constraintStart_toEndOf="@id/btn_check"
+        app:layout_constraintTop_toBottomOf="@id/cb_complete3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_update"
+        app:layout_constraintTop_toBottomOf="@id/cb_complete3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
