@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Drop Shadow Stack -->
+    <item> <shape> <padding android:top="0dp" android:right="1dp" android:bottom="2dp" android:left="0dp" /> <corners android:radius="20dp" /> <solid android:color="#00CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="0dp" android:right="1dp" android:bottom="2dp" android:left= "0dp" /> <corners android:radius="20dp" /> <solid android:color="#10CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="0dp" android:right="1dp" android:bottom="2dp" android:left="0dp" /> <corners android:radius="20dp" /> <solid android:color="#20CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="0dp" android:right="1dp" android:bottom="2dp" android:left="0dp" /> <corners android:radius="20dp" /> <solid android:color="#30CCCCCC" /> </shape> </item>
+    <item> <shape> <padding android:top="0dp" android:right="1dp" android:bottom="2dp" android:left="0dp" /> <corners android:radius="20dp" /> <solid android:color="#50CCCCCC" /> </shape> </item>
+
     <item
         android:start="2dp"
         android:end="2dp"
@@ -12,9 +19,12 @@
                 android:bottomRightRadius="15dp"
                 android:topLeftRadius="15dp"
                 android:topRightRadius="15dp" />
-        <stroke android:width="2dp"
-            android:color="#F9FDF8"/>
+            <stroke android:width="2dp"
+                android:color="#F9FDF8"/>
             <solid android:color="#E0F2D8"/>
+
+            <corners
+                android:radius="10dp"/>
         </shape>
     </item>
 </layer-list>

@@ -11,7 +11,7 @@ import dagger.hilt.android.components.ActivityComponent
 
 @Module()
 @InstallIn(ActivityComponent::class)
-object MainActivityModule {
+object MainActivity2Module {
 
     @Provides
     fun provideNavController(activity: Activity) : NavController{

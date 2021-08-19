@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "513332729778",
+    "project_id": "swupreme-ca187",
+    "storage_bucket": "swupreme-ca187.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513332729778:android:da8fee4e12d61b6cb836ab",
+        "android_client_info": {
+          "package_name": "com.example.dia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513332729778-rb0ptt7rcsefktgovbu1c83cu6d064h9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARxuvNYIpj2rt-3Hnj742mq5AbU36Ereg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513332729778-rb0ptt7rcsefktgovbu1c83cu6d064h9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

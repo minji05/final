@@ -3,9 +3,9 @@
     <!-- UNSELECTED -->
     <item android:state_checked="false">
         <shape>
-            <stroke android:color="#c4cbd2" android:width="1dp" />
+            <stroke android:color="#FEFDF8" android:width="1dp" />
             <corners android:radius="15dp" />
-            <solid android:color="#fff" />
+            <solid android:color="#FEFDF8" />
         </shape>
     </item>
     <!-- SELECTED -->
@@ -15,15 +15,10 @@
             <item>
                 <shape>
                     <corners android:radius="15dp" />
-                    <solid android:color="#e14f50" />
+                    <solid android:color="#44C0AA" />
                 </shape>
             </item>
             <!-- 이미지 영역 -->
-            <item android:drawable="@drawable/soso" android:top="4dp" android:right="4dp" android:bottom="4dp" android:left="4dp" />
         </layer-list>
     </item>
 </selector>
-
-
-
-

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:orientation="horizontal"
+    android:background="#FEFDF8"
     tools:ignore="Orientation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,17 +55,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="입력"
+        android:background="@drawable/d"
         app:layout_constraintTop_toBottomOf="@id/cb_complete3"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="불러오기"
-        app:layout_constraintStart_toEndOf="@id/btn_check"
-        app:layout_constraintTop_toBottomOf="@id/cb_complete3"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/d"
+            android:text="불러오기"
+            app:layout_constraintStart_toEndOf="@id/btn_check"
+            app:layout_constraintTop_toBottomOf="@id/cb_complete3"
+            tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv"

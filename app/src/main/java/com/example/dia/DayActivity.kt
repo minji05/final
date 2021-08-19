@@ -1,31 +1,14 @@
 package com.example.dia
 
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.RadioButton
-import android.widget.RadioGroup
-
-import androidx.annotation.RequiresApi
-import com.example.dia.MainActivity
-
-import kotlinx.android.synthetic.main.activity_main.*
-
-
-import dagger.hilt.android.AndroidEntryPoint
-import java.io.FileOutputStream
-import java.time.LocalDate
-
-@AndroidEntryPoint
+import android.widget.*
+import java.util.*
 
 //하루 기록 화면
-class DayActivity : AppCompatActivity() {
+class DayActivity: AppCompatActivity() {
 
     private var mood: String = ""
     private var symptom: String = ""
@@ -36,9 +19,8 @@ class DayActivity : AppCompatActivity() {
 
     lateinit var saveBtn: Button
     lateinit var backBtn: Button
+    lateinit var dateView: TextView
 
-    var fname: String = ""
-    var str: String = ""
 
     lateinit var mood_radio: RadioGroup
     lateinit var exercising_radio: RadioGroup
@@ -67,7 +49,6 @@ class DayActivity : AppCompatActivity() {
     lateinit var sleep_9h: RadioButton
 
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_day)
@@ -75,6 +56,7 @@ class DayActivity : AppCompatActivity() {
         //사용할 id 연결
         saveBtn = findViewById(R.id.save_Btn)
         backBtn = findViewById(R.id.back_Btn)
+        dateView = findViewById(R.id.dateView)
         mood_radio = findViewById(R.id.mood_radio)
         exercising_radio = findViewById(R.id.exercising_radio)
         drink_radio = findViewById(R.id.drink_radio)
@@ -100,6 +82,7 @@ class DayActivity : AppCompatActivity() {
         sleep_7h = findViewById(R.id.sleep_7h)
         sleep_8h = findViewById(R.id.sleep_8h)
         sleep_9h = findViewById(R.id.sleep_9h)
+
 
         //기분 선택
         mood_radio.setOnCheckedChangeListener { radioGroup, checkedId ->
@@ -154,11 +137,18 @@ class DayActivity : AppCompatActivity() {
             }
         }
 
+        if (intent.hasExtra("todaydate")) {
+            dateView.text = intent.getStringExtra("todaydate")
+        } else {
+            Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
+        }
 
         //저장 버튼을 누르면 데이터 전달
         saveBtn.setOnClickListener {
-            val date = LocalDate.now()
-            val sharedPreferences = getSharedPreferences("$date",0)
+            //var date = intent.getStringExtra("date")
+            //var date = 1
+            var todaydate = dateView.text
+            var sharedPreferences = getSharedPreferences("$todaydate",0)
             val editor = sharedPreferences.edit()
             editor.putString("mood", mood)
             editor.putString("symptom", symptom)
@@ -168,32 +158,18 @@ class DayActivity : AppCompatActivity() {
             editor.putString("Sleeping", isSleeping)
             editor.apply()
 
-            val intent = Intent(this, MainActivity::class.java)
-
-            intent.getStringExtra("date")
+            val intent = Intent(this, CalActivity::class.java)
+            intent.putExtra("date", todaydate)
             startActivity(intent)
 
         }
 
         //취소 버튼을 누르면 전으로 이동
         backBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, CalActivity::class.java)
             startActivity(intent)
         }
 
-    }
-    @SuppressLint("WrongConstant")
-    fun saveData(personBody: String){
-
-        try {
-            var fos: FileOutputStream = openFileOutput(personBody, MODE_PRIVATE)
-            var content: String = isExercising + isDrinked + isSmoking + isSleeping
-            fos.write(content.toByteArray())
-            fos.close()
-
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
     }
 
 

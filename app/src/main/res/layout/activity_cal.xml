@@ -5,19 +5,33 @@
 
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FEFDF8"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/option_menu"></androidx.appcompat.widget.Toolbar>
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="322dp"
         android:layout_height="309dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="#FEFDF8"
+        android:background="@drawable/cal_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -27,76 +41,82 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:text="캘린더"
-        android:fontFamily="@font/font1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#181519"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- <fragment
-        android:id="@+id/diagnosisFragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_main" /> -->
-
 
     <Button
         android:id="@+id/add_Btn"
-        android:layout_width="86dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="147dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/d"
-        android:text="추가"
-        android:fontFamily="@font/font1"
+        android:text="몸상태 기록하기"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/diaryTextView"
-        android:layout_width="186dp"
-        android:layout_height="26dp"
+        android:layout_width="135dp"
+        android:layout_height="27dp"
         android:layout_marginTop="3dp"
-        android:fontFamily="@font/font1"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:itemIconTint="@drawable/navigation_color"
+        app:itemTextColor="@drawable/navigation_color"
+        app:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.0"
+        app:menu="@menu/menu_bottom" />
 
     <TextView
         android:id="@+id/person_drink"
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="10dp"
-        android:fontFamily="@font/font1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
     <TextView
         android:id="@+id/person_symptom"
-        android:layout_width="134dp"
-        android:layout_height="32dp"
+        android:layout_width="144dp"
+        android:layout_height="34dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="10dp"
-        android:fontFamily="@font/font1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
@@ -105,11 +125,10 @@
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="10dp"
-        android:fontFamily="@font/font1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
@@ -118,11 +137,10 @@
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="10dp"
-        android:fontFamily="@font/font1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
@@ -131,11 +149,10 @@
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="10dp"
-        android:fontFamily="@font/font1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
@@ -144,11 +161,10 @@
         android:layout_width="80dp"
         android:layout_height="22dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="10dp"
-        android:fontFamily="@font/font1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
@@ -156,24 +172,23 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
         android:text="기분"
-        android:fontFamily="@font/font1"
         app:layout_constraintBottom_toTopOf="@+id/person_mood"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/diaryTextView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="120dp"
-        android:fontFamily="@font/font1"
         android:text="증상"
         app:layout_constraintBottom_toTopOf="@+id/person_mood"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -182,43 +197,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="52dp"
-        android:fontFamily="@font/font1"
+        android:layout_marginEnd="56dp"
         android:text="운동 시간"
         app:layout_constraintBottom_toTopOf="@+id/person_mood"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
         android:text="음주"
-        android:fontFamily="@font/font1"
         app:layout_constraintBottom_toTopOf="@+id/person_drink"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="34dp"
         android:text="흡연"
-        android:fontFamily="@font/font1"
         app:layout_constraintBottom_toTopOf="@+id/person_drink"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:fontFamily="@font/font1"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="57dp"
         android:text="수면 시간"
         app:layout_constraintBottom_toTopOf="@+id/person_drink"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/person_symptom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/diaryTextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

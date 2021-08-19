@@ -42,10 +42,6 @@ class MainActivity : AppCompatActivity() {
         var fname: String = ""
         var str: String = ""
 
-        private val navController by lazy{
-            findNavController(R.id.diagnosisFragment)
-        }
-
 
         @RequiresApi(Build.VERSION_CODES.O)
         override fun onCreate(savedInstanceState: Bundle?) {

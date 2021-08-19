@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        android:enabled="false"
+        android:icon="@drawable/home02"
+        android:title="홈"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tab2"
+        android:enabled="true"
+        android:icon="@drawable/calendar"
+        android:title="캘린더"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tab3"
+        android:enabled="true"
+        android:icon="@drawable/check"
+        android:title="자가진단"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tab4"
+        android:enabled="true"
+        android:icon="@drawable/know"
+        android:title="알아보기"
+        app:showAsAction="ifRoom" />
+
+</menu>
